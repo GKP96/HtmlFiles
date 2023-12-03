@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prajakta</title>
+
+        <!-- <style>
+            .abc {
+                color: aqua;
+            }
+        </style> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+<h2>HTML Image</h2>
+<img src="https://tse1.mm.bing.net/th?id=OIP.IOGGKcmJMYKPkMuimQDLnwHaHv&pid=Api&P=0&h=180" alt="Cat iamge" width="500" height="600">
+<h2>Unordered List</h2>
+
+<ul list-style-type="disc;">       <!--circle,square,none -->
+    <li>Item1
+        <ul>
+            <li>Item1.1</li>
+            <li>Item1.2</li>
+            <li>Item1.3</li>
+        </ul>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+</ul>
+
+<h2>Ordered List</h2>
+<ol type="1">     <!-- no need to use style -->
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+</ol>
+
+<ol type="1" start="51">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+</ol>
+
+
+<h2>Discription List</h2> <!-- List of item with discription of each item -->
+<!-- 
+<dl>= defines discription list
+<dt>= defines the term(item)
+<dd>= describes the term
+-->
+
+<dl>
+    <dt>Term1</dt>
+    <dd>-Discription of term1</dd>
+    <dt>Term2</dt>
+    <dd>-This is description of term2</dd>
+</dl>
+
+<br>
+</br>
+
+<h2>#Tables in HTML</h2> <!--To represent data in rows and columns-->
+
+<h3>Basic HTML Table</h3>
+<!--
+    <tr>=table row 
+    <th>=table header (Bold and center alligned)
+    <td>=table data (left alligned)
+-->
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+    </tr>
+
+    <tr>
+        <td>Prajakta</td>
+        <td>Solankar</td>
+        <td>Pune</td>
+    </tr>
+
+    <tr>
+        <td>Gautam</td>
+        <td>Pandey</td>
+        <td>Patna</td>
+    </tr>
+
+    <tr>
+        <td>Sneha</td>
+        <td>Pandey</td>
+        <td>Bihar</td>
+    </tr>
+</table>
+
+
+<H4>Table properties</H4>
+<!--
+    . is use to access class.
+    -border:size, type, color
+    -border-collapse:collapse;  (single line)
+    -border-spacing:15px;   #about border and the cell box
+    -padding:15px;          #about border and the cell content
+    -style="width:100%"     #size of the cell
+    -<th class="prath" colspan="2">Contacts</th>  #Colspan=to add 2 elements
+    -<caption>Student Details</caption>  #caption tag=To add table name(details)  =>on the top of the table
+-->
+
+
+<style>
+    table, th, td{
+        border: solid red;
+    }
+    .pra, .prath, .pratd {   
+        border:1px solid black; 
+        border-spacing:15px;
+    }
+</style>
+
+<table class="pra" style="width:50%">  
+    <caption>Student Details</caption>
+    <tr>
+        <th class = "prath">First Name</th>
+        <th class = "prath">Last Name</th>
+        <th class = "prath">Address</th>
+    </tr>
+
+    <tr>
+        <td class="pratd">Prajakta</td>
+        <td class="pratd" >Solankar</td>
+        <td class="pratd">Pune</td>
+    </tr>
+
+    <tr>
+        <td class="pratd">Gautam</td>
+        <td class="pratd">Pandey</td>
+        <td class="pratd">Patna</td>
+    </tr>
+</table>
+
+<br>
+</br>
+
+<style>
+    .pra, .prath, .pratd {
+        border: 1px solid black;
+        border-spacing: 15px;
+    }
+</style>
+
+<h4>colspan</h4>
+
+<table class="pra" style="width:50%">
+    <caption>Student Details</caption>
+    <tr>
+        <th class="prath">First Name</th>
+        <th class="prath">Last Name</th>
+        <th class="prath" colspan="2">Contacts</th>
+    </tr>
+
+    <tr>
+        <td class="pratd">Prajakta</td>
+        <td class="pratd">Solankar</td>
+        <td class="pratd">12345</td>
+        <td class="pratd">67890</td>
+    </tr>
+
+    <tr>
+        <td class="pratd">Gautam</td>
+        <td class="pratd">Pandey</td>
+        <td class="pratd">98765</td>
+        <td class="pratd">86432</td>
+    </tr>
+</table>
+
+<br>
+
+
+
+<style>
+    .gau, .gauth, .gautd {
+        border: 1px solid rgb(0, 0, 0);
+        border-spacing: 15px;
+        padding:15px;
+    }
+</style>
+
+<h4>rowspan</h4>
+
+<table class="gau" style="width: 60%;"> 
+    <caption>Student Details</caption>
+    <tr>
+        <th class="gauth">First Name</th>
+        <td class="gauth">Tanvi</td>
+        <td class="gauth">Anvi</td>
+    </tr>
+
+    <tr>
+        <th class="gauth">Last Name</th>
+        <td class="gauth">Vishwambhar</td>
+        <td class="gauth">Naik</td>
+    </tr>
+
+    <tr>
+        <th class="gauth" rowspan="2">Contacts</th>
+        <td class="gauth">12345</td>
+        <td class="gauth">12345</td>
+    </tr>
+    <tr>
+        <td class="gauth">12345</td>
+        <td class="gauth">12345</td>
+    </tr>
+</table>
+
+<br>
+
+
+
+<h2>Block and Inline Elements</h2>
+<!--
+Block = start from a new line in the paragraph. e.g- <div>
+e.g: 
+    <h1-h1>, <p>, <pre>, <table>, <li>, <ul>, <ol>, <dl>, <dd>, <dt>
+
+inline = go in the sequence in the paragraph. e.g-<span>
+e.g: (All formatting tags)
+    <a>, <img>, <b>, <i>, <br>, <emp>, <strong>, <sub>, <sup>
+-->
+
+<p>Hello, I have a cat. Her name is Nini.</p>
+<br>
+<p>Hello, <div>I have a cat.</div> Her name is Nini.</p>
+<br>
+<p>Hello, <span>I have a cat.</span>Her name is Nini.</p>
+
+<br>
+
+
+<h2>Class attribute in HTML</h2>
+
+
+
+<h3>Nini</h3>
+<h4>Hello</h4>
+
+<div class="abc">
+    <p>My cat name is Nini.</p>
+</div>
+
+<style>
+            .abc {
+                color: rgb(115, 0, 255);
+            }
+</style>
+
+
+<h3>ID in HTML</h3>
+<!--
+ID is similar to the class itself, it's just one HTML element only.
+
+*Multiple classes:-
+    You can use multiple classes inside the sigle sttyle element.
+-->
+
+<style>
+    #abc123{
+        color:red;
+    }
+</style>
+
+<h4 id="abc123">Hello, My name is Prajakta.</h4>
+<p id="abc123">I have completed my Masters.</p>
+
+<br>
+
+
+
+
+<h2>#Responsive WEb Design</h2>
+<!--
+Creating web pages that will look on all the devices,
+i.e Adjusting the content according to the device screen size.
+-->
+
+<h3>1.Inside head section</h3>
+<!--
+<meta name="viewport" contemt = "width=device-width, initial-scale=1.0">
+-->
+
+<h3>2.Responsive Images</h3>
+<!--
+style="width:100%"     (in this case, image will scale upto the larger than original size.)
+style="max-width:100%" (that's why use max-width)
+-->
+
+<h3>3.Responsive Text size</h3>
+<!--
+style = "font-size:100vw" (vw-viewport width)
+-->
+
+<br>
+
+
+
+
+<h1>#More in Elements</h1>
+
+<h3>Layout elements</h3>
+<!--
+It define parts of a webpage.
+
+        <Header> 
+        <nav>
+<section>  
+            <aside>
+<article>
+        <footer>
+
+also,
+<details> and <summary>
+-->
+
+<h3>Computercode elemets</h3>
+<!--
+<kbd>  - keyboard elements
+<samp> - to define sample o/p from a computer program
+<code> - to define piece of code
+<var>  - to use variable inside the code (eg:a+b)
+-->
+
+<p>Undo the changes by <kbd>ctrl+Z</kbd></p>
+<!--o/p = Font type of ctrl+Z is different here-->
+
+<br>
+
+<p><samp>If file not found press F1</samp></p>
+<!--o/p = different font type of whole line.-->
+
+<br>
+
+<code>
+    a=2;
+    b=1;
+    c=a+b;
+</code>
+<br>
+
+<code>
+    <pre>
+    a=2;
+    b=1;
+    c=a+b;
+    </pre>
+</code>
+
+<br>
+
+<p><var>a</var>+<var>b</var></p>
+
+<br>
+
+<h3>Sementic elemets</h3>
+<!--elements with meanning 
+-Clearlt describes its meaning to the developer.
+
+semantic elements e.g:
+<article>, <aside>, <details>, <figure>-used to specift the self-contained contet, <figcaption> - provide caption for the figure,
+     <footer>, <main>-main content of the document, <mark>-gighlight the text, <nav>, <section>, <summary>, <time> 
+-->
+
+<h4>navigation element</h4>
+<nav>
+    <a href="#">Home</a>
+    <a href="./contact.html">Contact</a>
+</nav>
+
+<br>
+
+<h2>#Creating Forms in HTML</h2>
+<!--Use to collect user input, this user input sent to server
+*Elements are:
+    <form> - 
+    <input> - type(type of input i.e no. or text), id, name(specifies name of the input element), 
+              value(specifies an initial value for input sapce ),
+    <label> - for
+-->
+
+
+<h3>"Select" element</h3>
+<!--<select> element defines a dropdown list so that user can select any item from that list.
+    <option> element defines the options, that the user needs to select from.
+    selected attribute defines a pre-selected option.
+-->
+
+<form>
+    <label for="choose">Choose an option</label>
+    <select id="choose">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+</form>
+
+<br>
+
+
+
+
+<h2>#Input elements</h2>
+<h3>1.Textbox</h3>
+<!--Input type-text: defines single line text input field.  -->
+
+<h4>Textbox</h4>
+<form>
+    <label for="fname">Firstname:</label>
+    <br>
+    <input type="text" id="fnmae" value="Prajakta">
+    <br>
+    <label for="lname">Lastname:</label>
+    <br>
+    <input type="text" id="lname" value="Solankar">
+</form>
+<!--'for' and 'id' from label and input should be same, to bind them together-->
+
+<br>
+
+<h3>2.Checkbox</h3>
+<!--Input type-checkbox: defines checkbox, It let a user select zero or any number of options.  -->
+
+<h4>Checkbox</h4>
+<form>
+    <input type="checkbox" id="A">
+    <label for="A">A</label>
+    <br>
+    <input type="checkbox" id="B">
+    <label for="B">B</label>
+    <br>
+    <input type="checkbox" id="C">
+    <label for="C">C</label>
+    <br>
+    <input type="checkbox" id="D">
+    <label for="D">D</label>
+    <br>
+    <input type="checkbox" id="None">
+    <label for="None">None</label>
+</form>
+
+<br>
+<h3>3.Radion button</h3>
+<!--Input type-Radio: defines a radio button, user can select one option out of many.-->
+
+<h4>Radio</h4>
+<form>
+    <input type="radio" id="A" name="same">
+    <label for="A">A</label>
+    <br>
+    <input type="radio" id="B" name="same">
+    <label for="B">B</label>
+    <br>
+    <input type="radio" id="C" name="same">
+    <label for="C">C</label>
+    <br>
+    <input type="radio" id="D" name="same">
+    <label for="D">D</label>
+    <br>
+    <input type="radio" id="None" name="same">
+    <label for="None">None</label>
+</form>
+
+<br>
+
+<h3>4.Input types: button, submit, reset</h3>
+<!--Input type: button =
+                submit =
+                reset  = values wull rest to the previous(initial values)
+-->
+
+<form>
+    <label for="fname">Firstname</label>
+    <br>
+    <input type="text" id="fname" value="Prajakta">
+    <br>
+    <label for="lname">Lastname</label>
+    <br>
+    <input type="text" id="lname" value="Solankar">
+
+    <br>
+
+    <label for="button">Button</label>
+    <br>
+    <input type="button" id="button" value="Ok"
+    oneclick="alert('Hii')">
+
+    <br>
+
+    <label for="reset">Reset</label>
+    <br>
+    <input type="reset" id="reset">
+
+    <br>
+
+    <label for="submit">Submit</label>
+    <br>
+    <input type="submit" id="submit">
+</form>
+
+<br>
+
+
+
+<h2>#More on input elements</h2>
+<h3>Input types:color, image, search</h3>
+<!--
+    Input type-color:
+               image:
+               search: 
+-->
+<form>
+    <label for="color">Color Picker</label>
+    <br>
+    <input type="color" id="color">
+
+    <br>
+
+    <label for="search">Search</label>
+    <br>
+    <input type="search" id="search">
+
+    <br>
+
+    <label for="image">Image Submit</label>
+    <br>
+    <input type="image" id="image">
+</form>
+
+<br>
+
+<h3>Input types:email,password,url</h3>
+<!--
+    email-used for input fields that should contain an email address
+    password-            --|--                          password
+    url-                 --|--                          url
+-->
+
+<form>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email">
+
+    <br>
+
+    <label for="pass">Password</label>
+    <br>
+    <input type="password" id="pass">
+
+    <br>
+
+    <label for="url">URL</label>
+    <br>
+    <input type="url" id="url">
+</form>
+
+<br>
+
+<h3>Input types:date, datetime, time</h3>
+ <!--
+    date- used for input fields that should contain a date,
+          it will show a date picker in the o/p sapce.
+    datetime-local - used for input fields that should contain a date and time,
+                     but time zones are not considered here.
+    time - used for input fields that should contain time,
+           but again time zones not considered here.
+ -->
+
+ <form>
+    <label for="date">Date</label>
+    <br>
+    <input type="date" id="date">
+
+    <br>
+
+    <label for="date-l">Datetime-local</label>
+    <br>
+    <input type="datetime-local" id="date-l">
+
+    <br>
+
+    <label for="t">Time</label>
+    <br>
+    <input type="time" id="t">
+ </form>
+
+</body>
+</html>
