@@ -1,0 +1,276 @@
+/* 
+display: inline-block => to put elets horizontally(in row)
+
+display: flex => same as above^
+
+margin: 0 auto; => to align in center
+(to keep some distance from another elment)
+
+justify-content: center;   /* to take all content(not text) in center*/
+
+
+.ninii{
+    color: rgb(231, 17, 17);
+    text-align: center;
+}
+    
+span {
+    color: rgb(68, 0, 255);
+}
+
+
+
+/************* Selectors and specificity --> */
+
+/*  select all text use *
+*{
+    color: antiquewhite;
+} 
+*/
+
+
+/* 
+.parent{
+    color:red
+} 
+*/
+
+/* use hashtag to add id (#ID) */
+#heading{
+    color: purple;
+}
+.intro, .child{
+    color: rgb(81, 255, 0);
+}
+/* multiple classes can be selected */
+
+
+/* this will not work bcoz it is the lower heirarchy
+#heading{
+    color: rgb(127, 168, 255);
+.head{
+    color: aqua;
+}
+.intro, .child{
+    color: antiquewhite;
+} */
+
+.head{
+    color: rgb(0, 166, 255);
+}
+#heading{
+    color: rgb(28, 235, 21);
+}
+.intro, .child{
+    color: rgb(231, 21, 21);
+}
+
+
+/************* styling text using online font libraries (google fonts, fomt library)***************************/
+
+#one{
+    font-family: 'AveriaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+#two{
+    font-family: 'SerreriaSobriaMedium';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*  **************    text properties in css   ************** */
+.Mycat {
+    color: rgb(91, 36, 36);
+    text-align: center;
+
+    letter-spacing: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+span {
+    color: rgb(68, 0, 255);
+}
+
+/* **************    background and borders   **************  
+- use to style the bkground of any tag/elments/body
+- can add any img/video/illustration to the bground   */
+
+body{
+    background-image: url("http://tinyurl.com/yc5afxc2");
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.a{
+    background-color: aqua;
+    height:100px;
+    width:100px;
+    border: 12px double greenyellow;
+}
+
+/* <!-- **************    Text on top of img   ************** --> */
+*{
+    margin: 0 auto;  /* to align in center */
+}
+.audi_image{
+    position: relative; 
+    background-color: #d4889e;
+    height: 300px;
+    width: 300px;
+    right: 500px;
+    display: flex;
+    align-items:center;
+    
+}
+.audi_image img{
+    height: 200px;
+    width: 200px;
+    
+    
+}
+#cartext{
+    position:absolute;
+    color:#3c00ff;
+    top: 610px;
+    left: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-shadow: 3px 5px #ff0048;
+}
+
+/*  **************  Display propertiesin css ************** */
+.square{
+    height: 300px;
+    width: 500px;
+    border: 3px solid rgb(255, 47, 161);
+    margin: 0 auto;
+    display: flex;  
+    justify-content: center;   /* to take all content in center*/
+}
+.first{
+    height: 100px;
+    width: 100px;
+    background-color:#f8239c;
+    margin: 10px;
+}
+.second{
+    height: 100px;
+    width: 100px;
+    background-color: #f8239c;
+    margin: 10px;
+}
+.third{
+    height: 100px;
+    width: 100px;
+    background-color: #f8239c;
+    margin: 10px;
+}
+
+/* ************ Positioning in css  ************* 
+static: no change happens
+relative*/
+.static{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(43, 0, 255);
+    top: 70px;   /*no change in static position*/
+    position: static;
+}
+.relative{
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    margin: 100px;
+    position:relative;
+    top: 50px;
+    left: 500px;
+}
+
+/* ********** float, clear and z-index ********** */
+/* div{
+    height: 150px;
+    width: 150px;
+    background-color:pink;
+    margin: 5px;
+}
+.one{
+    float: right;
+}
+p{
+    clear: both;
+
+*/
+
+.xy{
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    margin: 0 auto; 
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background-color:pink;
+    margin: 5px;
+
+    float: right;
+}
+p{
+    clear: both;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-color:pink;
+    margin: 5px;
+}
+.three{
+    height: 100px;
+    width: 100px;
+    background-color:pink;
+    margin: 5px;
+}
+
+
+/* ************* styling links in css: visited, unvisited, hover, active ************** 
+visited - link has been clicked and visited by the user.
+unvisited - link has not been clicked/visited by the user.
+Hover - mouse pointer is currently over the link. 
+active - link is active at the moment it is clicked.
+*/
+a{
+    text-decoration: none0;
+    color: black;
+    font-size: 20px;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    text-decoration: double;
+    color: rgb(0, 255, 153);
+}
+a:unvisited{
+    color: rgb(132, 255, 0);
+}
+a:active{
+    color: rgb(255, 0, 0);
+}
+
+/* *********** styling buttons in css ************  
+- we can add various style attributes like background color, boredr, color, cursor property, trasperency, hover and many more effects.
+- we can also use bootstrap to style our buttons using just class name and it comes with lots of customization too.
+*/
+
+button{
+    background-color: skyblue;
+    font-size: 30px;
+    font-family: cursive;
+    padding: 8px; /* inner space in text and the boder */
+    margin: 100px; /* button will move little away from top left part*/
+    border-radius: 70px; /* button will get round shape*/
+    
+}
+

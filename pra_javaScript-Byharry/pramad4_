@@ -1,0 +1,84 @@
+// #13 ***************  Strings   *************************
+let str = "Gautam"
+console.log(str)
+console.log(str.length)
+console.log(str[0])
+
+
+/*
+#String Interpolation:-
+Tamplete literals is one of the technique
+Tamplate literals are enclosed by backticks (``).
+*/
+let age = 24
+let message =`Hello, my name is ${str} and my age is ${age}.`
+console.log(message)
+
+
+//
+let a = `This is ${str}`  //This is called as 'string interpolation'.      o/p = This is Gautam
+console.log(a);
+
+
+
+// #14 *******  string methods  *****************
+let name = "Gautam Pandey"
+console.log(name.length)
+console.log(name.toLowerCase())
+console.log(name.toUpperCase())
+
+console.log(name.slice(2,4)) //ut
+console.log(name.slice(2))   //utam Pandey
+
+console.log(name.replace("Gautam", "Gautam Kumar"))
+
+
+let wifey= "Prajata Pandey"
+console.log(name.concat(' is husband of ', wifey))
+
+let dog = "     Goldie               "   //removes the spaces
+console.log(dog.trim())
+
+// see more string methods from google
+
+//Strings are immutable
+let z = "Nini"
+console.log(z);
+z[0] = "n"  // this change is not possible, original string will remain as it is.
+            // This will not even print error.
+
+
+
+// ********** #15  Practice set    *********************
+let strr = "fox\""          //   \" is a Escape sequence character
+console.log(strr.length);
+
+const sentence = "My cat name is nini"
+const word = "cat"
+const word2 = "fox"
+console.log(sentence.includes(word));
+console.log(sentence.includes(word2));
+// console.log('The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence');
+
+
+let text = "Hello world";
+console.log(text.startsWith("Hello"));
+console.log(text.endsWith("world"));
+console.log(text.endsWith("Hello", 5)); // true (ends at index 5)
+
+
+// Q. take string "please give RS 1000" and print amount
+let string = "please give RS 1000"
+let amount = string.slice("please give RS ".length)
+// console.log(string.slice(7)) //this will print = give RS 1000
+console.log(amount)
+console.log(typeof amount) // string
+
+let amount2 = Number.parseInt(string.slice("please give RS ".length)) //to cnvrt str into num
+console.log(typeof amount2)
+
+//Q are you able to change 4th character of the string by 'p'  = "Ayushyaman" 
+let z = "Ayushyaman" 
+
+z[3] = "p" // string is not changed bcoz string is immutable
+
